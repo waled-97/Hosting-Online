@@ -29,7 +29,7 @@ const WebHostingPlan = () => {
           <TiTick /> Free Email 
         </div>
       </div>
-      <button className="mt-4 border-2 border-gray-900 text-gray-900 text-2xl font-bold p-1 rounded-full hover:text-white hover:bg-gray-900 translate w-full">
+      <button className="mt-4 border-2 border-gray-900 text-gray-900 text-2xl font-bold p-1 rounded-full hover:text-white hover:bg-gray-900 translate w-full" style={{transition:"background-color 0.3s ease, color 0.3s ease"}}>
         BUY NOW
       </button>
     </div>

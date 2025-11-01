@@ -1,13 +1,11 @@
-import { url } from "inspector";
 import React from "react";
-import Link from "next/link";
 import { Article } from "@/utils/types";
 import ArticleItem from "../components/articles/ArticleItem";
 
 const ArticlePage = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  if(!res.ok){
-    throw new Error("Failed to fetch articles .. ")
+  if (!res.ok) {
+    throw new Error("Failed to fetch articles .. ");
   }
 
   const articles: Article[] = await res.json();
