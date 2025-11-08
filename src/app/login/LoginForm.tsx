@@ -29,7 +29,7 @@ const LoginForm = () => {
         />
         <button
           type="submit"
-          className="text-2xl text-white bg-blue-800 p-2 rounded-lg"
+          className="text-2xl text-white bg-blue-800 p-2 rounded-lg font-bold"
         >
           Login
         </button>

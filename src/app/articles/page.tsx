@@ -1,7 +1,7 @@
 import React from "react";
 import { Article } from "@/utils/types";
 import ArticleItem from "../components/articles/ArticleItem";
-
+import { Metadata } from "next";
 const ArticlePage = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   if (!res.ok) {
@@ -21,3 +21,8 @@ const ArticlePage = async () => {
 };
 
 export default ArticlePage;
+
+export const metadata: Metadata = {
+  title: "Articles Page",
+  description: "Articles about programming",
+};
